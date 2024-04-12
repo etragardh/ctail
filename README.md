@@ -20,8 +20,8 @@ ctail -f access.log
 Your log now has colors =)
 
 ### Todo
-Include parameter for search/grep
-Inlcude parameter for highlight specifik keyword (ie single ip adress, GET requests etc)
-Ability to create own styling from config file
+Include parameter for search/grep<br />
+Inlcude parameter for highlight specifik keyword (ie single ip adress, GET requests etc)<br />
+Ability to create own styling from config file<br />
 
 ![ctail colored tail](https://github.com/etragardh/ctail/blob/main/assets/ctail.png?raw=true)
