@@ -1,6 +1,6 @@
 # ctail
 Wrapper around tail.<br />
-Thanks to "viss" for the idea. It's not new.<br />
+Thanks to @viss for the idea. It's not new.<br />
 The old ones are just not maintained and dont run on osx.<br />
 I don'n know if they do any attempt to highligt possible attacks?
 
