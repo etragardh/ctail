@@ -19,10 +19,13 @@ ctail -f access.log
 ```
 
 Your log now has colors =)<br />
-And it might warn you about some dangerous requests as well as help you separte users.<br />
-YOU/local<br />
-SCR/scripts<br />
-BOT/Googlebot etc<br />
+And it might warn you about some dangerous requests blinkin in red.
+
+## Who did visit you
+It might also help you separte users.<br />
+`YOU`/local<br />
+`SCR`/scripts<br />
+`BOT`/Googlebot etc<br />
 
 ### Todo
 Include parameter for search/grep<br />
