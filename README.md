@@ -6,7 +6,7 @@ This is a work in progress =)
 ```
 gh repo clone etragardh/ctail
 chmod +x ctail/ctail
-ln -s ctail/ctail /usr/local/bin
+sudo ln -s ${PWD}/ctail/ctail /usr/local/bin
 ```
 
 **Usage**
