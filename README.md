@@ -1,8 +1,9 @@
 # ctail
 Wrapper around tail.<br />
-Thanks to @viss for the idea. It's not new.<br />
+Thanks to [@viss](https://github.com/viss) for the idea. It's not new.<br />
 The old ones are just not maintained and dont run on osx.<br />
-I don'n know if they do any attempt to highligt possible attacks?
+I don'n know if they do any attempt to highligt possible attacks?<br />
+This is the [original](https://github.com/cornet/ccze)<br />
 
 **Install**
 ```
@@ -17,7 +18,11 @@ ctail -n 20 access.log
 ctail -f access.log
 ```
 
-Your log now has colors =)
+Your log now has colors =)<br />
+And it might warn you about some dangerous requests as well as help you separte users.<br />
+YOU/local<br />
+SCR/scripts<br />
+BOT/Googlebot etc<br />
 
 ### Todo
 Include parameter for search/grep<br />
