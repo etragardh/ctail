@@ -23,4 +23,4 @@ Include parameter for search/grep
 Inlcude parameter for highlight specifik keyword (ie single ip adress, GET requests etc)
 Ability to create own styling from config file
 
-![ctail colored tail](https://github.com/etragardh/ctail/blob/main/ctail.png?raw=true)
+![ctail colored tail](https://github.com/etragardh/ctail/blob/main/assets/ctail.png?raw=true)
