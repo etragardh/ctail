@@ -33,28 +33,32 @@ END = "\033[0m"
 
 def colorize(line):
     color_patterns = {
-        'error':RED+BOLD,
-        'warn':YELLOW+BOLD,
-        'notice':CYAN+BOLD,
-        ' (5[0-9][0-9]) ':RED,                                  # 500
-        ' (4[0-9][0-9]) ':YELLOW,                               # 400
-        ' (3[0-9][0-9]) ':YELLOW,                               # 300
-        ' (2[0-9][0-9]) ':GREEN,                                # 200
-        '(GET|HEAD|POST|DELETE|PUTi|CONNECT|OPTIONS|TRACE|PATCH|PROPFIND)':'inherit',
+        'error':RED,
+        'warn':YELLOW,
+        'notice':CYAN,
+        '(?<=" )(5[0|1][0-9])(?= )':RED,                                  # 500
+        '(?<=" )(4[0|1][0-9])(?= )':YELLOW,                                  # 400
+        '(?<=" )(3[0|1][0-9])(?= )':YELLOW,                                  # 300
+        '(?<=" )(2[0|1][0-9])(?= )':GREEN,                                  # 200
+        '(?<=")(GET|HEAD|POST|DELETE|PUTi|CONNECT|OPTIONS|TRACE|PATCH|PROPFIND)(?= \/)':'inherit',
         '\[(([A-Za-z]{3} ){2}[0-9]{2} )(.*?)\]':FAINT,          # time
         '\[([0-9]{2}\/[A-Za-z]{3})(.*?)\]':FAINT,               # time 2
         'HTTP/[0-3]\.[0-9]':FAINT,                              # HTTPS/1.0
         r'^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}':NEGATIVE, # IP
-        '(install|\.env|config\.json|wp-config\.php|debug|\.log|\.git)':RED+NEGATIVE+BLINK,
+        '(setup-config\.php|config\.json|wp-config\.php|\.git)':RED+NEGATIVE+BLINK, #exact
+        '(install|debug)':RED+NEGATIVE+BLINK, #part
+        '(?<= \/)(.*?)\.(env|log|txt)(?= )':RED+NEGATIVE+BLINK, #ending
+        '(install|setup-config\.php|\.env|config\.json|wp-config\.php|debug|\.log|\.git)':RED+NEGATIVE+BLINK,
     }
     color_line = line
-    last_color = "\033[0;35m"
+    last_color = False
     for pattern, color in color_patterns.items():   # iterate
         txt = re.search(pattern, line)
         if txt:                                     # if match
             color = last_color if color == 'inherit' else color
             color_line = re.sub(pattern, color+txt[0]+END, color_line)
-            last_color = color
+            last_color = color if not last_color else last_color
+#            print(color_line)
 
     return color_line
 
