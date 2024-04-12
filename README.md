@@ -19,7 +19,13 @@ ctail -f access.log
 ```
 
 Your log now has colors =)<br />
-And it might warn you about some dangerous requests blinkin in red.
+
+## Warnings
+And it might warn you about some dangerous requests blinking in red.
+
+`scans`/hackwp/wpscan/dirbuster etc<br />
+`php`/php in uploads or other places<br />
+`sensitive data`/.env/.log/.git etc<br />
 
 ## Who did visit you
 It might also help you separte users.<br />
