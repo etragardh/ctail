@@ -39,3 +39,6 @@ Inlcude parameter for highlight specifik keyword (ie single ip adress, GET reque
 Ability to create own styling from config file<br />
 
 ![ctail colored tail](https://github.com/etragardh/ctail/blob/main/assets/ctail.jpg?raw=true)
+
+## Support
+<p><a href="https://www.buymeacoffee.com/etragardh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="etragardh" /></a></p>
