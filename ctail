@@ -49,10 +49,11 @@ def colorize(line):
         '(?<= )([a-zA-Z0-9_-]+)(B|b)ot':CYAN,                                   # Bots
         '(P|p)ython|curl|PostmanRuntime|Insomnia':CYAN,                         # Script
 #        '(Mozilla|Chrome|Opera|Edge|Firefox|Safari|Samsung|WebView)\/':CYAN,    # UA
-        '(setup-config\.php|config\.json|wp-config\.php|\.git)':DANGER,         #dangerous exact
+        '(setup-config\.php|config\.json|wp-config\.php|\.git|chan.php)':DANGER, #dangerous exact
         '(install|debug|DirBuster|GoBuster|fuzz|hackwp)':DANGER,                # dangerous part
         '(?<= \/)(.*?)\.(env|log)(?= )':DANGER,                                 # dangerous ending
         '\/uploads(.*?)\.(php[0-9]?|phtml|py|pl|cgi|jsp|asp|sh)':DANGER,        # dangerous pattern 
+        '(render_element|php_code)':DANGER,                                     # dangerous bricks & breakdance 
     }
     color_line = line
     last_color = False
