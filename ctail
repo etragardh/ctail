@@ -3,7 +3,6 @@ import sys, os, re, subprocess
 
 ####
 ## Print in Color
-#
 
 BLACK = "\033[0;30m"
 RED = "\033[0;31m"
