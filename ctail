@@ -51,7 +51,7 @@ def colorize(line):
         'HTTP/[0-3]\.[0-9]':FAINT,                                              # HTTPS/1.0
         r'((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}':CYAN,                     # IP
         '(?<=port )[0-9]{1,6}':CYAN,
-        '(?<= )([a-zA-Z0-9_-]+)(B|b)ot':CYAN,                                   # Bots
+        '(?<= |\")([a-zA-Z0-9_-]+)(B|b)ot':CYAN,                                   # Bots
         '(P|p)ython|curl|PostmanRuntime|Insomnia':CYAN,                         # Script
 #        '(Mozilla|Chrome|Opera|Edge|Firefox|Safari|Samsung|WebView)\/':CYAN,    # UA
         '(setup-config\.php|config\.json|wp-config\.php|\.git|chan.php)':DANGER, #dangerous exact
