@@ -45,6 +45,7 @@ It might also help you separte users.<br />
 Include parameter for search/grep<br />
 Inlcude parameter for highlight specifik keyword (ie single ip adress, GET requests etc)<br />
 Ability to create own styling from config file<br />
+Separate config based on input log format / logfile / logged service<br />
 
 ![ctail colored tail](https://github.com/etragardh/ctail/blob/main/assets/ctail.jpg?raw=true)
 
