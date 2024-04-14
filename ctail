@@ -115,3 +115,5 @@ try:
 
 except(KeyboardInterrupt):
     exit()
+except subprocess.CalledProcessError as e:
+    print(e.output)
