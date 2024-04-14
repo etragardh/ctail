@@ -7,6 +7,7 @@ This is the [original](https://github.com/cornet/ccze)<br />
 
 **Install**
 ```
+cd ~/
 gh repo clone etragardh/ctail
 chmod +x ctail/ctail
 sudo ln -s ${PWD}/ctail/ctail /usr/local/bin
@@ -19,6 +20,13 @@ ctail -f access.log
 ```
 
 Your log now has colors =)<br />
+
+**Update**
+Go to `ctail` directory (`~/ctail` if you followed installation instructions)
+```
+cd ~/ctail
+git pull
+```
 
 ## Warnings
 And it might warn you about some dangerous requests blinking in red.
