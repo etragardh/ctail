@@ -59,7 +59,7 @@ def colorize(line):
         '(?<= \/)(.*?)\.(env|log)(?= )':DANGER,                                 # dangerous ending
         '(render_element|php_code)':DANGER,                                     # dangerous bricks & breakdance 
         '\/uploads(.*?)\.(php[0-9]?|phtml|py|pl|cgi|jsp|asp|sh)':DANGER,        # dangerous pattern 
-        '(root)':BOLD+UNDERLINEPURPLE,                                     # dangerous bricks & breakdance 
+        '(root)':BOLD+UNDERLINE+PURPLE,                                     # dangerous bricks & breakdance 
         '(granted|session opened|enabled|Accepted(.+)for|ready)':GREEN,                                     # dangerous bricks & breakdance 
         '(File(.+)exist:|(Connection|session) closed|disabled|Disconnected from|forward(ed)?)':YELLOW,                                     # dangerous bricks & breakdance 
         '(invalid|block(ed)?)':RED,                                     # dangerous bricks & breakdance 
